@@ -52,11 +52,12 @@
           let j = Math.floor(Math.random() * (i + 1));
           [array[i], array[j]] = [array[j], array[i]];
         }
+        return array
       }
       function init() {
         place = -1;
         time = 0.00;
-        errors = 0
+        errors = 0;
         document.getElementById("progress").style.display = "inline";
         timer = setInterval(function (){time+=0.01;document.getElementById("time").innerHTML=time.toFixed(2)+" seconds spent.";}, 10);
         success.innerText = "Go!";

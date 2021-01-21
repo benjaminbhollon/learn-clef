@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Musiqwik";
+  src: url("./Musiqwik.woff") format("woff"),
+       url("./Musiqwik.tff") format("tff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: 'Trebuchet MS', Calibri, sans-serif;
+  margin: 0;
+  font-size: 1.3em;
+  background-color: lightsalmon;
+}
+
+.notation {
+  font-family: "Musiqwik";
+  text-decoration: none;
+  color: inherit;
+  font-size: 3.5em;
+  margin: 0;
+}
+
+button {
+  padding: 1em;
+  background-color: #000;
+  color: #fff;
+  border: 0;
+  font-size: 1em;
+}
+
+#controls button {
+  margin: -0.1em;
+  width: 12.5vw;
+  height: 12.5vw;
+  max-width: 75px;
+  max-height: 75px;
+}
+
+#picker {
+  display: grid;
+}
+
+#picker .notation {
+  font-size: 5em;
+}
+
+#clef {
+  display: none;
+}
+
+body[data-finished="false"] #playAgain, body[data-playing="true"] #play, body[data-playing="true"] #playAgain, body[data-playing="false"] #controls, body[data-playing="false"] #progress {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  #picker {
+    grid-template-columns: 33.33% 33.33% 33.33%
+  }
+}
