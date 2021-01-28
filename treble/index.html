@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Learn Bass Clef</title>
+    <title>Learn Treble Clef</title>
     <link rel="stylesheet" href="../lib/global.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="An excellent tool when you want to learn a new clef, whether it's for band, choir, music theory, or just your own hobby.">
     <meta charset="UTF-8">
-    <meta property="og:title" content="Learn Bass Clef">
+    <meta property="og:title" content="Learn Treble Clef">
     <meta property="og:type" content="website">
     <meta property="og:description" content="An excellent tool when you want to learn a new clef, whether it's for band, choir, music theory, or just your own hobby.">
     <meta property="og:image" content="../banner.jpg">
   </head>
   <body data-playing="false" data-finished="false">
-    <span id="clef">bass</span>
-    <h1>Learn Bass Clef</h1>
-    <p class="notation">'¯=<span id="note">==</span>=.</p>
+    <span id="clef">treble</span>
+    <h1>Learn Treble Clef</h1>
+    <p class="notation">'&amp;=<span id="note">==</span>=.</p>
     <progress id="progress" value="0" max="22" style="height:1.5em;width:500px;max-width:100%;"></progress>
     <p id="time"></p>
     <p id="success" style="color:green"></p>
     <p id="error" style="color:red"></p>
     <p id="play"><button onclick="init()">Play</button></p>
     <p id="playAgain"><button onclick="init()">Play again</button></p>
-    <p id="controls">
+    <div id="controls">
       <button onclick="checkAnswer('A')">A</button>
       <button onclick="checkAnswer('B')">B</button>
       <button onclick="checkAnswer('C')">C</button>
@@ -29,7 +29,8 @@
       <button onclick="checkAnswer('E')">E</button>
       <button onclick="checkAnswer('F')">F</button>
       <button onclick="checkAnswer('G')">G</button>
-    </p>
+      <p>You can also type the letter on your keyboard.</p>
+    </div>
 
     <script type="text/javascript" src="../lib/play.js"></script>
   </body>

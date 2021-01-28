@@ -52,7 +52,7 @@ button {
   display: none;
 }
 
-body[data-finished="false"] #playAgain, body[data-playing="true"] #play, body[data-playing="true"] #playAgain, body[data-playing="false"] #controls, body[data-playing="false"] #progress {
+body[data-finished="false"] #playAgain, body[data-playing="true"] #play, body[data-finished="true"] #play, body[data-playing="true"] #playAgain, body[data-playing="false"] #controls, body[data-playing="false"] #progress {
   display: none;
 }
 
