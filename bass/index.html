@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Learn Bass Clef</title>
-    <link rel="stylesheet" href="../lib/global.css">
+    <link rel="stylesheet" href="../assets/global.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="An excellent tool when you want to learn a new clef, whether it's for band, choir, music theory, or just your own hobby.">
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
     <p id="error" style="color:red"></p>
     <p id="play"><button onclick="init()">Play</button></p>
     <p id="playAgain"><button onclick="init()">Play again</button></p>
-    <p id="controls">
+    <div id="controls">
       <button onclick="checkAnswer('A')">A</button>
       <button onclick="checkAnswer('B')">B</button>
       <button onclick="checkAnswer('C')">C</button>
@@ -29,9 +29,10 @@
       <button onclick="checkAnswer('E')">E</button>
       <button onclick="checkAnswer('F')">F</button>
       <button onclick="checkAnswer('G')">G</button>
-    </p>
+      <p>(or press the key on your keyboard)</p>
+    </div>
     <p><a href="../">Learn a different clef</a></p>
     <noscript>Please enable Javascript to use this tool.</noscript>
-    <script type="text/javascript" src="../lib/play.js"></script>
+    <script type="text/javascript" src="../assets/play.js"></script>
   </body>
 </html>
